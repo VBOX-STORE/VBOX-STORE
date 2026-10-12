@@ -148,7 +148,97 @@ category: "Bags"
  name: "Classic Dark grey Sneakers",
  description: "Comfortable everyday sneakers",
  price: 45.23,
- image: "images/grey-sneakers.jpg",
+ image: "images/darkgrey-sneakers.jpg",
  category: "Sneakers"
+},
+
+  {
+ id: 17,
+ name: "Luxury Formal Suit",
+ description: "Premium tailored suit for elegant occasions",
+ price: 120,
+ image: "images/luxury-suit.jpg",
+ category: "Clothing"
+},
+
+{
+ id: 18,
+ name: "Designer Casual Jacket",
+ description: "Modern fashion jacket with a premium finish",
+ price: 25,
+ image: "images/designer-jacket.jpg",
+ category: "Clothing"
+},
+
+{
+ id: 19,
+ name: "Classic Denim Jacket",
+ description: "Stylish everyday wear with a comfortable fit",
+ price: 30.62,
+ image: "images/denim-jacket.jpg",
+ category: "Clothing"
+},
+
+{
+ id: 20,
+ name: "Premium Evening Gown",
+ description: "Elegant designer dress for special events",
+ price: 20,
+ image: "images/evening-gown.jpg",
+ category: "Clothing"
+},
+
+{
+ id: 21,
+ name: "Luxury Streetwear Hoodie",
+ description: "Comfortable high-end casual fashion",
+ price: 85,
+ image: "images/streetwear-hoodie.jpg",
+ category: "Clothing"
+},
+
+{
+ id: 22,
+ name: "Diamond Ring",
+ description: "Elegant jewellery piece for every occasion",
+ price: 95,
+ image: "images/diamond-ring.jpg",
+ category: "Jewellery"
+},
+
+{
+ id: 23,
+ name: "Luxury Bracelet",
+ description: "Premium handcrafted bracelet design",
+ price: 70.30,
+ image: "images/luxury-bracelet.jpg",
+ category: "Jewellery"
+},
+
+{
+ id: 24,
+ name: "Diamond Earrings",
+ description: "Sophisticated jewellery for every occasion",
+ price: 65.53,
+ image: "images/diamond-earrings.jpg",
+ category: "Jewellery"
+},
+
+{
+ id: 25,
+ name: "Pearl Necklace",
+ description: "Classic jewellery with timeless beauty",
+ price: 40,
+ image: "images/pearl-necklace.jpg",
+ category: "Jewellery"
+},
+
+{
+ id: 26,
+ name: "Gold Ring Collection",
+ description: "Premium rings designed for luxury style",
+ price: 80,
+ image: "images/gold-ring.jpg",
+ category: "Jewellery"
 }
 ];
