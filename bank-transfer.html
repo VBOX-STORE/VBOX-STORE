@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VBOX Bank Transfer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Bank Transfer Payment</h1>
+
+<div class="payment-box">
+
+<h2>Complete Your Payment</h2>
+
+<p>Please transfer the total amount to the account below:</p>
+
+<hr>
+
+<h3>Bank Details</h3>
+
+<p><b>Bank Name:</b> VBOX Bank</p>
+<p><b>Account Name:</b> VBOX STORE</p>
+<p><b>Account Number:</b> 1234567890</p>
+
+<hr>
+
+<h3>Order Total</h3>
+
+<h2 id="transferTotal">€ 0</h2>
+
+<p>After payment, click the button below.</p>
+
+  <h3>Transfer Details</h3>
+
+<input id="senderName" type="text" placeholder="Sender Name">
+
+<input id="transferEmail" type="email" placeholder="Email Address">
+
+<input id="transferAmount" type="number" placeholder="Transfer Amount">
+
+<input id="transferPin" type="password" placeholder="Transfer PIN">
+
+<button onclick="confirmTransfer()">I Have Completed Payment</button>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("YbQxsDAECBPjVui2A");
+})();
+</script>
+  
+<script>
+
+let order = JSON.parse(localStorage.getItem("order"));
+
+if(order){
+
+let total = 0;
+
+order.cart.forEach(item=>{
+    let qty = item.quantity || 1;
+    total += item.price * qty;
+});
+
+document.getElementById("orderTotal").innerHTML = "€" + total;
+
+}
+
+
+function confirmTransfer(){
+
+let senderName = document.getElementById("senderName").value;
+let transferEmail = document.getElementById("transferEmail").value;  
+let transferAmount = document.getElementById("transferAmount").value;
+let transferPin = document.getElementById("transferPin").value;
+
+let order = JSON.parse(localStorage.getItem("order"));
+
+let total = 0;
+
+order.cart.forEach(item=>{
+let qty = item.quantity || 1;
+total += item.price * qty;
+});
+
+if(
+senderName === "VBOX CUSTOMER" &&
+Number(transferAmount) === total &&
+transferPin === "123456"
+){
+
+localStorage.removeItem("cart");
+
+localStorage.setItem(
+"paymentStatus",
+"Bank Transfer Completed"
+);
+
+  emailjs.send(
+"service_jogh68a",
+"template_timxinw",
+{
+  to_email: transferEmail,
+  customer_name: order.name,
+  order_total: total,
+  customer_address: order.address,
+  customer_phone: order.phone,
+  payment_method: "Bank Transfer"
+}
+)
+.then(function(response){
+
+  console.log("Bank transfer email sent", response);
+
+  window.location.href="order-success.html";
+
+})
+.catch(function(error){
+
+  console.log("Bank transfer email error", error);
+
+});
+
+}
+
+else{
+
+alert("Transfer details do not match. Please check your information.");
+
+}
+
+}
+
+</script>
+
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VBOX Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Checkout</h1>
+
+<div class="checkout-container">
+
+  <h2>Your Order</h2>
+
+<div id="checkoutItems"></div>
+
+<h2 id="checkoutTotal"></h2>
+
+    <h2>Customer Details</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+
+    <input type="email" id="email" placeholder="Email Address">
+
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <textarea id="address" placeholder="Delivery Address"></textarea>
+
+
+    <h2>Payment Method</h2>
+
+    <select id="payment">
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Card Payment">Card Payment</option>
+    </select>
+
+
+    <button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function(){
+ emailjs.init("YbQxsDAECBPjVui2A");
+})();
+</script>
+
+<script src="js/app.js"></script>
+
+<script>
+displayCheckout();
+</script>
+
+</body>
+</html>

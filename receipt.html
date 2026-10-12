@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VBOX Receipt</title>
+</head>
+
+<body>
+
+<div class="receipt">
+
+<h1>VBOX Store</h1>
+
+<h2>Payment Receipt</h2>
+
+<p>Receipt No: <b id="receiptNumber"></b></p>
+<p>Date: <b id="receiptDate"></b></p>
+
+<hr>
+
+<p>Customer Name: <b id="customerName"></b></p>
+
+<p>Order Total: €<b id="orderTotal"></b></p>
+
+  <h3>Items Purchased</h3><div id="receiptItems"></div>
+
+<p>Payment Method: <b id="paymentMethod"></b></p>
+
+<p>Delivery Address: <b id="customerAddress"></b></p>
+
+<p>Phone: <b id="customerPhone"></b></p>
+
+<hr>
+
+<h3>Thank you for shopping with VBOX Store</h3>
+
+<button class="download-btn" onclick="downloadReceipt()">Download Receipt</button>
+</div>
+
+
+<script>
+
+let order = JSON.parse(localStorage.getItem("order"));
+
+if(order){
+
+document.getElementById("customerName").innerHTML = order.name;
+
+document.getElementById("paymentMethod").innerHTML =
+order.payment_method || "Card Payment";
+
+document.getElementById("customerAddress").innerHTML =
+order.address;
+
+document.getElementById("customerPhone").innerHTML =
+order.phone;
+
+
+let total = 0;
+
+order.cart.forEach(item=>{
+    total += item.price * (item.quantity || 1);
+});
+
+  let itemsHTML = "";
+
+order.cart.forEach(item=>{
+    itemsHTML += `
+    <p>
+    ${item.name} 
+    x ${item.quantity || 1}
+    - €${item.price * (item.quantity || 1)}
+    </p>
+    `;
+});
+
+document.getElementById("receiptItems").innerHTML = itemsHTML;
+
+
+document.getElementById("orderTotal").innerHTML = total;
+
+
+document.getElementById("receiptNumber").innerHTML =
+"VBOX-" + Date.now();
+
+document.getElementById("receiptDate").innerHTML =
+new Date().toLocaleString();
+}
+
+function downloadReceipt(){
+    window.print();
+
+  setTimeout(function(){
+    window.print();
+}, 500);
+}
+
+</script>
+
+
+</body>
+</html>
