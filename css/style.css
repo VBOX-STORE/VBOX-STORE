@@ -1,1 +1,608 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background: #ffffff;
+    color: #111;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cart-item h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.cart-item p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.cart-item button {
+    display: block;
+    margin-top: 15px;
+}
+
+#cartTotal {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+button {
+    padding: 15px 35px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.quantity-box button {
+    width: 45px;
+    height: 40px;
+    font-size: 22px;
+}
+
+.quantity-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.quantity-box button {
+    width: 50px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.quantity-number {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cart-item button {
+    margin-top: 10px;
+}
+
+.quantity-box {
+    margin-bottom: 10px;
+}
+
+/* CHECKOUT DESIGN */
+
+.checkout-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.checkout-item {
+    background: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.checkout-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.checkout-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.checkout-item p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#checkoutTotal {
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.checkout-container button {
+    width: 100%;
+    padding: 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.single-product img {
+    width: 90%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.single-product {
+    text-align: center;
+    padding: 20px;
+}
+
+.single-product h1 {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.single-product p {
+    font-size: 18px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.product-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card button {
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
+}
+
+.product-card h3 {
+    min-height: 60px;
+}
+
+.product-card p {
+    min-height: 55px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.categories button {
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: black;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 30px auto;
+    border: 2px solid #ddd;
+    border-radius: 35px;
+    padding: 12px 20px;
+    background: white;
+}
+
+.search-icon {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+}
+
+.search-box input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+/* VBOX PREMIUM STORE DESIGN */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* Header */
+h1 {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 22px;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+/* Category buttons */
+button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Product grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Product card */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Product image */
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Product name */
+.product-card h2,
+.product-card h3 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Price */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Search box */
+.search-box input {
+    width: 80%;
+    padding: 18px;
+    border-radius: 40px;
+    border: 2px solid #ddd;
+    font-size: 20px;
+}
+
+/* Mobile improvement */
+@media(max-width:600px){
+
+.products {
+    grid-template-columns: repeat(2, 1fr);
+    padding:15px;
+    gap:15px;
+}
+
+.product-card {
+    padding:15px;
+}
+
+.product-card img {
+    height:220px;
+}
+
+h1 {
+    font-size:35px;
+}
+
+}
+
+/* VBOX Product Card Upgrade */
+
+.product-card {
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.product-card img {
+    height: 230px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.product-card h2,
+.product-card h3 {
+    margin: 15px 5px 10px;
+    font-size: 24px;
+}
+
+.product-card p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* Add a smooth app feel */
+.product-card,
+button,
+.search-box {
+    transition: all 0.3s ease;
+}
+
+/* VBOX App Style Product Cards */
+
+.product-card {
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.product-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.product-card h2,
+.product-card h3 {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.product-card button {
+    width: 100%;
+    margin-top: 15px;
+  }
