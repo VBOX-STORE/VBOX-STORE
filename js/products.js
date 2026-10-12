@@ -126,11 +126,29 @@ category: "Bags"
 },
 
 {
-    id: 15,
-    name: "Diamond Necklace",
-    description: "Elegant jewellery collection",
-    price: 85.62,
-    image: "images/diamond-necklace.jpg",
-    category: "Jewellery"
+ id: 14,
+ name: "Diamond Necklace",
+ description: "Elegant jewellery collection",
+ price: 85.62,
+ image: "images/diamond-necklace.jpg",
+ category: "Jewellery"
+},
+
+{
+ id: 15,
+ name: "Luxury Green Handbag",
+ description: "Premium designer handbag",
+ price: 30.45,
+ image: "images/green-handbag.jpg",
+ category: "Bags"
+},
+
+{
+ id: 16,
+ name: "Classic Dark grey Sneakers",
+ description: "Comfortable everyday sneakers",
+ price: 45.23,
+ image: "images/darkgrey-sneakers.jpg",
+ category: "Sneakers"
 }
 ];
