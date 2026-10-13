@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VBOX Support Chat</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h2>Chat with VBOX Support</h2>
+
+<div id="messages"></div>
+
+<input id="messageInput" placeholder="Type your message">
+<button onclick="sendMessage()">Send</button>
+
+
+<script>
+function sendMessage(){
+
+let message = document.getElementById("messageInput").value;
+
+if(message.trim() === ""){
+alert("Please type a message");
+return;
+}
+
+let email = "vboxstore1@gmail.com"; 
+let subject = "VBOX Support Request";
+
+let body = message;
+
+window.open(
+"https://mail.google.com/mail/?view=cm&fs=1&to=" + email +
+"&su=" + encodeURIComponent(subject) +
+"&body=" + encodeURIComponent(body)
+);
+
+}
+</script>
+
+</body>
+</html>
