@@ -38,12 +38,12 @@ let subject = "VBOX Support Request";
 
 let body = message;
 
+document.getElementById("messageInput").value = "";
+
 window.location.href =
 "mailto:" + email +
 "?subject=" + encodeURIComponent(subject) +
 "&body=" + encodeURIComponent(body);
-
-document.getElementById("messageInput").value = "";
 
 }
 </script>
