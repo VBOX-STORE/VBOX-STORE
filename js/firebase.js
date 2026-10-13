@@ -2,12 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCGjynQULi8g3-o9YiyyMRqtZJocJrb0rU",
+  authDomain: "vbox-store.firebaseapp.com",
+  projectId: "vbox-store",
+  storageBucket: "vbox-store.firebasestorage.app",
+  messagingSenderId: "416888897534",
+  appId: "1:416888897534:web:549324ae408988e88f4aaf",
+  measurementId: "G-0PL2Z5MPK1"
 };
 
 const app = initializeApp(firebaseConfig);
