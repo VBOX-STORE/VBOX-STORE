@@ -240,5 +240,113 @@ category: "Bags"
  price: 80,
  image: "images/gold-ring.jpg",
  category: "Jewellery"
-}
+},
+
+  {
+    id: 17,
+    name: "Elegant Evening Gown",
+    description: "Luxury women's formal evening dress",
+    price: 120,
+    image: "images/elegant-evening-gown.jpg",
+    category: "Clothing"
+},
+
+{
+    id: 18,
+    name: "Luxury Blazer Dress",
+    description: "Premium stylish women's blazer outfit",
+    price: 95,
+    image: "images/blazer-dress.jpg",
+    category: "Clothing"
+},
+
+{
+    id: 19,
+    name: "Silk Casual Dress",
+    description: "Comfortable premium silk fashion wear",
+    price: 85,
+    image: "images/silk-dress.jpg",
+    category: "Clothing"
+},
+
+{
+    id: 20,
+    name: "Designer Jumpsuit",
+    description: "Elegant women's modern jumpsuit",
+    price: 110,
+    image: "images/designer-jumpsuit.jpg",
+    category: "Clothing"
+},
+
+{
+    id: 21,
+    name: "Luxury Shoulder Bag",
+    description: "Premium designer shoulder handbag",
+    price: 90,
+    image: "images/shoulder-bag.jpg",
+    category: "Bags"
+},
+
+{
+    id: 22,
+    name: "Classic Tote Bag",
+    description: "Spacious elegant everyday handbag",
+    price: 70,
+    image: "images/tote-bag.jpg",
+    category: "Bags"
+},
+
+{
+    id: 23,
+    name: "Fashion Crossbody Bag",
+    description: "Stylish compact women's bag",
+    price: 65,
+    image: "images/crossbody-bag.jpg",
+    category: "Bags"
+},
+
+{
+    id: 24,
+    name: "Luxury Clutch Bag",
+    description: "Elegant evening clutch handbag",
+    price: 55,
+    image: "images/clutch-bag.jpg",
+    category: "Bags"
+},
+
+{
+    id: 25,
+    name: "High Heel Shoes",
+    description: "Premium women's fashion heels",
+    price: 80,
+    image: "images/high-heels.jpg",
+    category: "Shoes"
+},
+
+{
+    id: 26,
+    name: "Women's Fashion Sandals",
+    description: "Comfortable luxury sandals",
+    price: 45,
+    image: "images/fashion-sandals.jpg",
+    category: "Shoes"
+},
+
+{
+    id: 27,
+    name: "Women Designer Sneakers",
+    description: "Modern casual women's sneakers",
+    price: 75,
+    image: "images/women-sneakers.jpg",
+    category: "Shoes"
+},
+
+{
+    id: 28,
+    name: "Luxury Ankle Boots",
+    description: "Premium women's leather boots",
+    price: 130,
+    image: "images/ankle-boots.jpg",
+    category: "Shoes"
+      }
 ];
