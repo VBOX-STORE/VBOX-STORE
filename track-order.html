@@ -54,6 +54,8 @@ const orderRef = doc(db, "orders", orderNumber);
 
 const orderSnap = await getDoc(orderRef);
 
+console.log("Firebase connected");
+
 
 if(orderSnap.exists()){
 
