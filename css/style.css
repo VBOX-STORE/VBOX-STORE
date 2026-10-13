@@ -607,3 +607,28 @@ button,
     width: 100%;
     margin-top: 15px;
 }
+
+/* Make cart slightly bigger */
+
+.cart-item img {
+    width: 180px;
+    height: 180px;
+}
+
+.cart-item h3 {
+    font-size: 22px;
+}
+
+.cart-item p {
+    font-size: 18px;
+}
+
+.quantity-box button {
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.quantity-box {
+    gap: 50px;
+}
