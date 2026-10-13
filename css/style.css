@@ -753,3 +753,36 @@ button:hover {
     text-align: center;
     margin-top: 30px;
 }
+
+.cart-item {
+    gap: 0;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+
+.cart-item h3 {
+    margin: 5px 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.quantity-box {
+    margin: 8px 0;
+}
+
+.cart-item > button {
+    margin: 8px auto;
+}
+
+.cart-item br {
+    display: none;
+}
