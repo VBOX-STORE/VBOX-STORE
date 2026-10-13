@@ -350,17 +350,8 @@ category: "Bags"
     category: "Shoes"
 },
 
-  {
-id: 40,
-name: "Elegant Evening Gown",
-description: "Premium women's formal fashion dress",
-price: 120,
-image: "images/evening-gown.jpg",
-category: "Clothing"
-},
-
 {
-id: 41,
+id: 40,
 name: "Luxury Leather Handbag",
 description: "Stylish designer handbag for women",
 price: 90,
@@ -369,7 +360,7 @@ category: "Bags"
 },
 
 {
-id: 42,
+id: 41,
 name: "Women's Designer Heels",
 description: "Premium fashion heels for elegant occasions",
 price: 75,
@@ -378,25 +369,7 @@ category: "Shoes"
 },
 
 {
-id: 43,
-name: "Silk Fashion Dress",
-description: "Elegant silk dress for modern women",
-price: 95,
-image: "images/silk-dress.jpg",
-category: "Clothing"
-},
-
-{
-id: 44,
-name: "Luxury Shoulder Bag",
-description: "Classic women's shoulder handbag",
-price: 65,
-image: "images/shoulder-bag.jpg",
-category: "Bags"
-},
-
-{
-id: 45,
+id: 42,
 name: "Diamond Bracelet",
 description: "Elegant jewellery accessory collection",
 price: 110,
@@ -405,7 +378,7 @@ category: "Jewellery"
 },
 
 {
-id: 46,
+id: 43,
 name: "Women's Casual Sneakers",
 description: "Comfortable everyday women's sneakers",
 price: 70,
@@ -414,16 +387,7 @@ category: "Shoes"
 },
 
 {
-id: 47,
-name: "Luxury Pearl Necklace",
-description: "Premium pearl jewellery design",
-price: 85,
-image: "images/pearl-necklace.jpg",
-category: "Jewellery"
-},
-
-{
-id: 48,
+id: 44,
 name: "Women's Casual Sneakers",
 description: "Comfortable everyday women's sneakers",
 price: 70,
@@ -432,7 +396,7 @@ category: "Shoes"
 },
 
 {
-id: 49,
+id: 45,
 name: "Elegant Evening Gown",
 description: "Premium women's formal fashion dress",
 price: 40,
@@ -441,7 +405,7 @@ category: "Clothing"
 },
 
 {
-id: 50,
+id: 46,
 name: "Luxury Shoulder Bag",
 description: "Classic women's shoulder handbag",
 price: 55,
