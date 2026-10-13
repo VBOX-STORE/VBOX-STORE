@@ -411,5 +411,140 @@ description: "Classic women's shoulder handbag",
 price: 55,
 image: "images/blueshoulder-bag.jpg",
 category: "Bags"
+},
+
+  {
+id: 47,
+name: "Luxury Jewellery Set",
+description: "Premium necklace and accessory collection",
+price: 150,
+image: "images/luxury-jewellery-set.jpg",
+category: "Jewellery"
+},
+
+{
+id: 48,
+name: "Premium Cotton Shirt",
+description: "Elegant casual shirt with a comfortable fit",
+price: 45,
+image: "images/cotton-shirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 49,
+name: "Classic Formal Shirt",
+description: "Premium shirt for professional occasions",
+price: 55,
+image: "images/formal-shirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 50,
+name: "Designer Polo Shirt",
+description: "Luxury casual polo fashion wear",
+price: 50,
+image: "images/polo-shirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 51,
+name: "Elegant Midi Skirt",
+description: "Stylish women's skirt for modern fashion",
+price: 60,
+image: "images/midi-skirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 52,
+name: "Premium Pleated Skirt",
+description: "Elegant pleated skirt design",
+price: 65,
+image: "images/pleated-skirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 53,
+name: "Classic Denim Skirt",
+description: "Comfortable everyday fashion skirt",
+price: 40,
+image: "images/denim-skirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 54,
+name: "Tailored Trousers",
+description: "Premium fitted trousers for elegant style",
+price: 70,
+image: "images/tailored-trousers.jpg",
+category: "Clothing"
+},
+
+{
+id: 55,
+name: "Classic Formal Trousers",
+description: "Elegant trousers for professional wear",
+price: 75,
+image: "images/formal-trousers.jpg",
+category: "Clothing"
+},
+
+{
+id: 56,
+name: "Luxury Casual Trousers",
+description: "Comfortable premium everyday trousers",
+price: 65,
+image: "images/casual-trousers.jpg",
+category: "Clothing"
+},
+
+{
+id: 57,
+name: "Luxury Chronograph Watch",
+description: "Premium watch with elegant design",
+price: 180,
+image: "images/chronograph-watch.jpg",
+category: "Watches"
+},
+
+{
+id: 58,
+name: "Classic Leather Watch",
+description: "Timeless luxury wrist watch",
+price: 140,
+image: "images/leather-watch.jpg",
+category: "Watches"
+},
+
+{
+id: 59,
+name: "Premium Automatic Watch",
+description: "Elegant automatic movement watch",
+price: 250,
+image: "images/automatic-watch.jpg",
+category: "Watches"
+},
+
+{
+id: 60,
+name: "Luxury Minimalist Watch",
+description: "Simple and elegant modern watch",
+price: 130,
+image: "images/minimalist-watch.jpg",
+category: "Watches"
+},
+
+{
+id: 61,
+name: "Designer Fashion Watch",
+description: "Stylish watch for everyday luxury",
+price: 160,
+image: "images/designer-watch.jpg",
+category: "Watches"
 }
 ];
