@@ -607,3 +607,36 @@ button,
     width: 100%;
     margin-top: 15px;
   }
+
+/* VBOX Support Chat */
+
+.chat-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-container h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#messageInput {
+    width: 90%;
+    height: 120px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.chat-container button {
+    margin-top: 20px;
+    padding: 15px 45px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
