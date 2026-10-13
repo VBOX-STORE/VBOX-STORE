@@ -640,3 +640,56 @@ button,
     border-radius: 30px;
     font-size: 18px;
 }
+
+/* VBOX Support Chat */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #111;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#messages {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    min-height: 200px;
+    padding: 15px;
+}
+
+#messageInput {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    height: 60px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: auto;
+    background: black;
+    color: white;
+    border: none;
+    padding: 14px 45px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
