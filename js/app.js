@@ -105,9 +105,7 @@ function displayCart() {
 
 </div>
 
-        <br><br>
-
-        <button onclick="removeFromCart(${index})">
+<button onclick="removeFromCart(${index})">
         Remove
         </button>
 
