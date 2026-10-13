@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Track Your Order - VBOX</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Track Your Order</h1>
+
+<p>Enter your VBOX order number</p>
+
+<input id="orderNumber" placeholder="Example: VBOX-1001">
+
+<button onclick="trackOrder()">Track Order</button>
+
+<div id="result"></div>
+
+
+<script>
+
+function trackOrder(){
+
+let order = document.getElementById("orderNumber").value;
+
+if(order === ""){
+alert("Enter your order number");
+return;
+}
+
+document.getElementById("result").innerHTML =
+"Checking order: " + order;
+
+}
+
+</script>
+
+</body>
+</html>
