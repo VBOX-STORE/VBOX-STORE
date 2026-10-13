@@ -33,16 +33,15 @@ alert("Please type a message");
 return;
 }
 
-let email = "vboxstore1@gmail.com"; 
+let email = "vboxstore1@gmail.com";
 let subject = "VBOX Support Request";
 
 let body = message;
 
-window.open(
-"https://mail.google.com/mail/?view=cm&fs=1&to=" + email +
-"&su=" + encodeURIComponent(subject) +
-"&body=" + encodeURIComponent(body)
-);
+window.location.href =
+"mailto:" + email +
+"?subject=" + encodeURIComponent(subject) +
+"&body=" + encodeURIComponent(body);
 
 }
 </script>
