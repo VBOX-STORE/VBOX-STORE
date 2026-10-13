@@ -1,74 +1,146 @@
-<!DOCTYPE html>  <html>  <head>  <title>Track Your Order - VBOX</title>  <link rel="stylesheet" href="css/style.css">  </head>  <body>  <h1>Track Your Order</h1>  <p>Enter your VBOX order number</p>  <input   
-id="orderNumber"   
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Track Your Order - VBOX</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<h1>Track Your Order</h1>
+
+<p>Enter your VBOX order number</p>
+
+
+<input 
+id="orderNumber" 
 placeholder="Example: VBOX-1001">
 
-<button id="trackBtn">  
-Track Order  
-</button>  <div id="result"></div>  <script type="module">  
-  
-import { db } from "./js/firebase.js";  
-  
-import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";  
-  
-  
-async function trackOrder(){  
-  
-let orderNumber = document.getElementById("orderNumber").value.trim();  
-  
-let result = document.getElementById("result");  
-  
-  
-if(orderNumber === ""){  
-result.innerHTML = "Enter your order number";  
-return;  
-}  
-  
-  
-const orderRef = doc(db, "orders", orderNumber);  
-  
-const orderSnap = await getDoc(orderRef);  
-  
-  
-if(orderSnap.exists()){  
-  
-let data = orderSnap.data();  
-  
-  
-result.innerHTML = `  
-  
-<h3>Order Found ✅</h3>  
-  
-<p><b>Order Number:</b> ${orderNumber}</p>  
-  
-<p>🌍 <b>Destination:</b> ${data.country}</p>  
-  
-<hr>  
-  
-<p>✅ Order Confirmed</p>  
-  
-<p>💳 Payment Received</p>  
-  
-<p>📦 Processing at Warehouse</p>  
-  
-<p>🚚 ${data.status}</p>  
-  
-<p>📍 <b>Current Location:</b> ${data.location}</p>  
-  
-<p>📅 <b>Estimated Delivery:</b> ${data.delivery}</p>  
-  
-`;  
-  
-}  
-  
-else{  
-  
-result.innerHTML = "Order not found ❌";  
-  
-}  
-  
-  
-}  
-  
-document.getElementById("trackBtn").addEventListener("click", trackOrder);  
-  
-</script>  </body>  </html>
+
+<button onclick="trackOrder()">
+Track Order
+</button>
+
+
+<div id="result"></div>
+
+
+
+<script type="module">
+
+import { db } from "./js/firebase.js";
+
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+
+
+window.trackOrder = async function(){
+
+
+let orderNumber = document
+.getElementById("orderNumber")
+.value
+.trim();
+
+
+let result = document.getElementById("result");
+
+
+
+if(orderNumber === ""){
+
+result.innerHTML = "Please enter your order number";
+
+return;
+
+}
+
+
+
+result.innerHTML = "Checking order...";
+
+
+
+try{
+
+
+const orderRef = doc(db, "orders", orderNumber);
+
+const orderSnap = await getDoc(orderRef);
+
+
+
+if(orderSnap.exists()){
+
+
+let data = orderSnap.data();
+
+
+
+result.innerHTML = `
+
+<h3>Order Found ✅</h3>
+
+<p><b>Order Number:</b> ${orderNumber}</p>
+
+<p>🌍 <b>Destination:</b> ${data.country}</p>
+
+<hr>
+
+<p>✅ Order Confirmed</p>
+
+<p>💳 Payment Received</p>
+
+<p>📦 Processing at Warehouse</p>
+
+<p>🚚 ${data.status}</p>
+
+<p>📍 <b>Current Location:</b> ${data.location}</p>
+
+<p>📅 <b>Estimated Delivery:</b> ${data.delivery}</p>
+
+`;
+
+
+
+}
+
+else{
+
+
+result.innerHTML = "Order not found ❌";
+
+
+}
+
+
+
+}
+
+catch(error){
+
+
+console.log(error);
+
+result.innerHTML = "Error checking order";
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
