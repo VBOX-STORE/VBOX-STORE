@@ -126,7 +126,7 @@ category: "Bags"
 },
 
 {
- id: 14,
+ id: 15,
  name: "Diamond Necklace",
  description: "Elegant jewellery collection",
  price: 85.62,
@@ -135,7 +135,7 @@ category: "Bags"
 },
 
 {
- id: 15,
+ id: 16,
  name: "Luxury Green Handbag",
  description: "Premium designer handbag",
  price: 30.45,
@@ -144,16 +144,16 @@ category: "Bags"
 },
 
 {
- id: 16,
+ id: 17,
  name: "Classic Dark grey Sneakers",
  description: "Comfortable everyday sneakers",
  price: 45.23,
- image: "images/grey-sneakers.jpg",
+ image: "images/darkgrey-sneakers.jpg",
  category: "Sneakers"
 },
 
   {
- id: 17,
+ id: 18,
  name: "Luxury Formal Suit",
  description: "Premium tailored suit for elegant occasions",
  price: 120,
@@ -162,7 +162,7 @@ category: "Bags"
 },
 
 {
- id: 18,
+ id: 19,
  name: "Designer Casual Jacket",
  description: "Modern fashion jacket with a premium finish",
  price: 25,
@@ -171,7 +171,7 @@ category: "Bags"
 },
 
 {
- id: 19,
+ id: 20,
  name: "Classic Denim Jacket",
  description: "Stylish everyday wear with a comfortable fit",
  price: 30.62,
@@ -180,7 +180,7 @@ category: "Bags"
 },
 
 {
- id: 20,
+ id: 21,
  name: "Premium Evening Gown",
  description: "Elegant designer dress for special events",
  price: 20,
@@ -189,7 +189,7 @@ category: "Bags"
 },
 
 {
- id: 21,
+ id: 22,
  name: "Luxury Streetwear Hoodie",
  description: "Comfortable high-end casual fashion",
  price: 85,
@@ -198,7 +198,7 @@ category: "Bags"
 },
 
 {
- id: 22,
+ id: 23,
  name: "Diamond Ring",
  description: "Elegant jewellery piece for every occasion",
  price: 95,
@@ -207,7 +207,7 @@ category: "Bags"
 },
 
 {
- id: 23,
+ id: 24,
  name: "Luxury Bracelet",
  description: "Premium handcrafted bracelet design",
  price: 70.30,
@@ -216,7 +216,7 @@ category: "Bags"
 },
 
 {
- id: 24,
+ id: 25,
  name: "Diamond Earrings",
  description: "Sophisticated jewellery for every occasion",
  price: 65.53,
@@ -225,7 +225,7 @@ category: "Bags"
 },
 
 {
- id: 25,
+ id: 26,
  name: "Pearl Necklace",
  description: "Classic jewellery with timeless beauty",
  price: 40,
@@ -234,7 +234,7 @@ category: "Bags"
 },
 
 {
- id: 26,
+ id: 27,
  name: "Gold Ring Collection",
  description: "Premium rings designed for luxury style",
  price: 80,
@@ -243,7 +243,7 @@ category: "Bags"
 },
 
   {
-    id: 17,
+    id: 28,
     name: "Elegant Evening Gown",
     description: "Luxury women's formal evening dress",
     price: 120,
@@ -252,7 +252,7 @@ category: "Bags"
 },
 
 {
-    id: 18,
+    id: 29,
     name: "Luxury Blazer Dress",
     description: "Premium stylish women's blazer outfit",
     price: 95,
@@ -261,7 +261,7 @@ category: "Bags"
 },
 
 {
-    id: 19,
+    id: 30,
     name: "Silk Casual Dress",
     description: "Comfortable premium silk fashion wear",
     price: 85,
@@ -270,7 +270,7 @@ category: "Bags"
 },
 
 {
-    id: 20,
+    id: 31,
     name: "Designer Jumpsuit",
     description: "Elegant women's modern jumpsuit",
     price: 110,
@@ -279,7 +279,7 @@ category: "Bags"
 },
 
 {
-    id: 21,
+    id: 32,
     name: "Luxury Shoulder Bag",
     description: "Premium designer shoulder handbag",
     price: 90,
@@ -288,7 +288,7 @@ category: "Bags"
 },
 
 {
-    id: 22,
+    id: 33,
     name: "Classic Tote Bag",
     description: "Spacious elegant everyday handbag",
     price: 70,
@@ -297,7 +297,7 @@ category: "Bags"
 },
 
 {
-    id: 23,
+    id: 34,
     name: "Fashion Crossbody Bag",
     description: "Stylish compact women's bag",
     price: 65,
@@ -306,7 +306,7 @@ category: "Bags"
 },
 
 {
-    id: 24,
+    id: 35,
     name: "Luxury Clutch Bag",
     description: "Elegant evening clutch handbag",
     price: 55,
@@ -315,25 +315,25 @@ category: "Bags"
 },
 
 {
-    id: 25,
+    id: 36,
     name: "High Heel Shoes",
     description: "Premium women's fashion heels",
-    price: 80,
+    price: 55,
     image: "images/high-heels.jpg",
     category: "Shoes"
 },
 
 {
-    id: 26,
+    id: 37,
     name: "Women's Fashion Sandals",
     description: "Comfortable luxury sandals",
-    price: 45,
+    price: 20,
     image: "images/fashion-sandals.jpg",
     category: "Shoes"
 },
 
 {
-    id: 27,
+    id: 38,
     name: "Women Designer Sneakers",
     description: "Modern casual women's sneakers",
     price: 75,
@@ -342,11 +342,11 @@ category: "Bags"
 },
 
 {
-    id: 28,
+    id: 39,
     name: "Luxury Ankle Boots",
     description: "Premium women's leather boots",
     price: 130,
     image: "images/ankle-boots.jpg",
     category: "Shoes"
-      }
+}
 ];
