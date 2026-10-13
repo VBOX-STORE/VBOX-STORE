@@ -787,62 +787,59 @@ button:hover {
     display: none;
 }
 
-/* CART DESIGN FINAL */
+/* CART FINAL CLEAN STYLE */
+
+#cartContainer {
+    width: 100%;
+}
 
 .cart-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    padding: 15px 0;
+    margin: 0 auto;
     border-bottom: 1px solid #ddd;
-    gap: 5px;
 }
 
 .cart-item img {
-    width: 180px !important;
-    height: 180px !important;
+    width: 140px !important;
+    height: 140px !important;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .cart-item h3 {
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .cart-item p {
-    margin: 3px 0;
+    margin: 4px 0;
 }
 
 .quantity-box {
-    width: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 8px 0;
+    gap: 45px;
+    margin: 10px 0;
 }
 
 .quantity-box button {
-    width: 45px;
+    width: 55px;
     height: 35px;
     border-radius: 20px;
 }
 
 .cart-item > button {
-    margin: 5px auto 10px;
-}
-
-.cart-item br {
-    display: none;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 8px;
 }
 
 #cartTotal {
     text-align: center;
-    margin: 25px 0 20px;
-}
-
-button {
-    cursor: pointer;
+    margin-top: 25px;
 }
