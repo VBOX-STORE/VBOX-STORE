@@ -21,7 +21,7 @@ id="orderNumber"
 placeholder="Example: VBOX-1001">
 
 
-<button onclick="trackOrder()">
+<button id="trackBtn">
 Track Order
 </button>
 
@@ -30,63 +30,72 @@ Track Order
 
 
 
-<script>
+<script type="module">
 
-function trackOrder(){
+import { db } from "./js/firebase.js";
 
-let order = document.getElementById("orderNumber").value;
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+
+async function trackOrder(){
+
+let orderNumber = document.getElementById("orderNumber").value.trim();
 
 let result = document.getElementById("result");
 
 
-if(order.trim() === ""){
-
-result.innerHTML = 
-"Please enter your order number";
-
+if(orderNumber === ""){
+result.innerHTML = "Enter your order number";
 return;
-
 }
 
 
-// Temporary test order
-if(order === "VBOX-1001"){
+const orderRef = doc(db, "orders", orderNumber);
+
+const orderSnap = await getDoc(orderRef);
+
+
+if(orderSnap.exists()){
+
+let data = orderSnap.data();
 
 
 result.innerHTML = `
 
-<h2>Order Found ✅</h2>
+<h3>Order Found ✅</h3>
 
-<p><b>Order Number:</b> VBOX-1001</p>
+<p><b>Order Number:</b> ${orderNumber}</p>
 
-<p>🌍 Destination: Germany 🇩🇪</p>
+<p>🌍 <b>Destination:</b> ${data.country}</p>
 
 <hr>
 
 <p>✅ Order Confirmed</p>
 
-<p>✅ Payment Received</p>
+<p>💳 Payment Received</p>
 
-<p>🚚 Processing at Warehouse</p>
+<p>📦 Processing at Warehouse</p>
 
-<p>✈️ In Transit</p>
+<p>🚚 ${data.status}</p>
 
-<p>📦 Estimated Delivery: 24 October</p>
+<p>📍 <b>Current Location:</b> ${data.location}</p>
+
+<p>📅 <b>Estimated Delivery:</b> ${data.delivery}</p>
 
 `;
 
+}
 
-}else{
+else{
 
-
-result.innerHTML = 
-"Order not found ❌";
-
+result.innerHTML = "Order not found ❌";
 
 }
 
 
 }
+
+document.getElementById("trackBtn").addEventListener("click", trackOrder);
 
 </script>
 
