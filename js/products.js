@@ -148,7 +148,7 @@ category: "Bags"
  name: "Classic Dark grey Sneakers",
  description: "Comfortable everyday sneakers",
  price: 45.23,
- image: "images/grey-sneakers.jpg",
+ image: "images/darkgrey-sneakers.jpg",
  category: "Sneakers"
 },
 
