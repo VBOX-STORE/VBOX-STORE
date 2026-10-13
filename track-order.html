@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Track Your Order - VBOX</title>
+
 <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
@@ -11,11 +16,18 @@
 
 <p>Enter your VBOX order number</p>
 
-<input id="orderNumber" placeholder="Example: VBOX-1001">
+<input 
+id="orderNumber" 
+placeholder="Example: VBOX-1001">
 
-<button onclick="trackOrder()">Track Order</button>
+
+<button onclick="trackOrder()">
+Track Order
+</button>
+
 
 <div id="result"></div>
+
 
 
 <script>
@@ -24,17 +36,61 @@ function trackOrder(){
 
 let order = document.getElementById("orderNumber").value;
 
-if(order === ""){
-alert("Enter your order number");
+let result = document.getElementById("result");
+
+
+if(order.trim() === ""){
+
+result.innerHTML = 
+"Please enter your order number";
+
 return;
+
 }
 
-document.getElementById("result").innerHTML =
-"Checking order: " + order;
+
+// Temporary test order
+if(order === "VBOX-1001"){
+
+
+result.innerHTML = `
+
+<h2>Order Found ✅</h2>
+
+<p><b>Order Number:</b> VBOX-1001</p>
+
+<p>🌍 Destination: Germany 🇩🇪</p>
+
+<hr>
+
+<p>✅ Order Confirmed</p>
+
+<p>✅ Payment Received</p>
+
+<p>🚚 Processing at Warehouse</p>
+
+<p>✈️ In Transit</p>
+
+<p>📦 Estimated Delivery: 24 October</p>
+
+`;
+
+
+}else{
+
+
+result.innerHTML = 
+"Order not found ❌";
+
+
+}
+
 
 }
 
 </script>
 
+
 </body>
+
 </html>
