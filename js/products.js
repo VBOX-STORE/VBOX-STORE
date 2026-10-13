@@ -546,5 +546,140 @@ description: "Stylish watch for everyday luxury",
 price: 160,
 image: "images/designer-watch.jpg",
 category: "Watches"
+},
+
+  {
+id: 62,
+name: "Luxury Women's Blouse",
+description: "Elegant premium blouse for modern fashion",
+price: 65,
+image: "images/luxury-blouse.jpg",
+category: "Clothing"
+},
+
+{
+id: 63,
+name: "Classic Women's Jeans",
+description: "Comfortable stylish denim jeans",
+price: 70,
+image: "images/women-jeans.jpg",
+category: "Clothing"
+},
+
+{
+id: 64,
+name: "Premium Fashion Skirt",
+description: "Elegant skirt design for everyday style",
+price: 55,
+image: "images/fashion-skirt.jpg",
+category: "Clothing"
+},
+
+{
+id: 65,
+name: "Designer Crop Jacket",
+description: "Stylish jacket with a premium finish",
+price: 85,
+image: "images/crop-jacket.jpg",
+category: "Clothing"
+},
+
+{
+id: 66,
+name: "Luxury Women's Coat",
+description: "Premium coat for elegant occasions",
+price: 150,
+image: "images/women-coat.jpg",
+category: "Clothing"
+},
+
+{
+id: 67,
+name: "Elegant Fashion Top",
+description: "Modern women's top with luxury style",
+price: 45,
+image: "images/fashion-top.jpg",
+category: "Clothing"
+},
+
+{
+id: 68,
+name: "Women's Casual Loafers",
+description: "Comfortable premium everyday shoes",
+price: 60,
+image: "images/women-loafers.jpg",
+category: "Shoes"
+},
+
+{
+id: 69,
+name: "Luxury Platform Heels",
+description: "Elegant women's platform heels",
+price: 90,
+image: "images/platform-heels.jpg",
+category: "Shoes"
+},
+
+{
+id: 70,
+name: "Women's Running Shoes",
+description: "Lightweight comfortable sports shoes",
+price: 75,
+image: "images/women-running-shoes.jpg",
+category: "Shoes"
+},
+
+{
+id: 71,
+name: "Premium Fashion Boots",
+description: "Stylish boots for modern women",
+price: 120,
+image: "images/fashion-boots.jpg",
+category: "Shoes"
+},
+
+{
+id: 72,
+name: "Luxury Mini Handbag",
+description: "Compact designer handbag for women",
+price: 85,
+image: "images/mini-handbag.jpg",
+category: "Bags"
+},
+
+{
+id: 73,
+name: "Premium Leather Tote",
+description: "Spacious luxury everyday bag",
+price: 110,
+image: "images/leather-tote.jpg",
+category: "Bags"
+},
+
+{
+id: 74,
+name: "Designer Shoulder Purse",
+description: "Elegant shoulder bag collection",
+price: 95,
+image: "images/shoulder-purse.jpg",
+category: "Bags"
+},
+
+{
+id: 75,
+name: "Luxury Evening Clutch",
+description: "Premium clutch bag for special occasions",
+price: 80,
+image: "images/evening-clutch.jpg",
+category: "Bags"
+},
+
+{
+id: 76,
+name: "Fashion Travel Backpack",
+description: "Stylish backpack with premium design",
+price: 100,
+image: "images/fashion-backpack.jpg",
+category: "Bags"
 }
 ];
